@@ -111,12 +111,12 @@ def calculate_green_area(lng, lat, radius=500):
 # 4. 主程序入口
 
 if __name__ == "__main__":
-    # ---------- 请修改以下配置 ----------
+    
     MY_ACCESS_KEY_ID = "//"
     MY_ACCESS_KEY_SECRET = "//"
     INPUT_FILE = "武汉_schools_data.xlsx"      # 你的学校坐标文件
     OUTPUT_FILE = "学校绿地面积计算结果.xlsx"   # 输出结果文件
-    # -----------------------------------
+    
 
     # 读取数据并转换坐标
     print("正在读取学校数据并转换坐标...")
