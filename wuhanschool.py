@@ -2,9 +2,8 @@ import requests
 import time
 import pandas as pd
 
-# ============================================================
 # 1. 基础函数：获取单页 POI 数据
-# ============================================================
+
 def get_poi_page(api_key, keywords, types, city, page=1, citylimit="true"):
     """
     调用高德地图「关键字搜索 API」，获取单页 POI 数据。
