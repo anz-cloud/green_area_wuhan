@@ -95,15 +95,10 @@ def calculate_green_area_osm(lat, lng, radius=500):
     green_proj['area_m2'] = green_proj.geometry.area
     return green_proj['area_m2'].sum()
 
-
-# ============================================================
-# 3. 主程序
-# ============================================================
 if __name__ == "__main__":
-    # ===== 请修改这里的文件名 =====
+    
     INPUT_FILE = "武汉_schools_data.xlsx"      # 你的武汉学校数据文件
     OUTPUT_FILE = "武汉中小学绿地面积计算结果.xlsx"
-    # =============================
 
     print("正在读取学校数据...")
     df = pd.read_excel(INPUT_FILE)
